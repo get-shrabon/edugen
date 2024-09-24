@@ -4,3 +4,13 @@
 @import "./partials/_global.scss";
 @import "./partials/_variables.scss";
 @import "./partials/_mixins.scss";
+
+
+// Hero Section css here
+.hero-container {
+    background-image: url('../images/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

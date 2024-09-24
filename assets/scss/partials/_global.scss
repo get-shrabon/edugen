@@ -8,9 +8,22 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
-h1, h2, h3, h4, h5, h6 {
-   font-family: "Lexend", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lexend", sans-serif;
 }
-p{
-   font-family: "Kumbh Sans", sans-serif;
+p {
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+// Components
+.primary-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $white;
+    background-color: $primary;
 }
