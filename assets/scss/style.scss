@@ -21,7 +21,6 @@ header {
 	background-position: center;
 	min-height: 100vh;
 	padding-top: 150px;
-	margin-bottom: 100px;
 
 	.hero-content {
 		h1 {
@@ -77,7 +76,6 @@ header {
 // Categories Section css here
 .categories-container {
 	.ctg-title {
-		font-size: 44px;
 		line-height: 60px;
 	}
 	.category-card {
@@ -87,4 +85,115 @@ header {
 			background-color: #efffdf;
 		}
 	}
+}
+
+// About Section css here
+.about-container {
+	background-color: #fff7fc;
+	padding-bottom: 270px;
+	.about-bg {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -50px;
+			width: 130px;
+			height: 130px;
+			background-image: url("../../assets/images/about-bg-dot.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			z-index: -1;
+		}
+	}
+	.exp-card {
+		background-image: linear-gradient(to right, #0063f4, #00f0aa);
+		padding: 20px 40px;
+		h2 {
+			font-size: 44px;
+		}
+		img {
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.about-title {
+		line-height: 60px;
+	}
+	.about-mtitle {
+		color: #0a0624;
+	}
+}
+
+// Video Section css here
+.video-container {
+	background-image: url("../../assets/images/video-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 30px 60px;
+   margin-top: -140px;
+	.video-title {
+		font-size: 70px;
+		color: black;
+		-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+		span {
+			display: block;
+			&:last-child {
+				padding-left: 40%;
+			}
+		}
+	}
+	.play-btn {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		img {
+			width: 20px;
+			height: 20px;
+			right: -3px;
+		}
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: circle 1.5s infinite;
+        }
+	}
+}
+
+
+
+
+
+
+
+
+
+// Animation Keyframes
+@keyframes circle {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
