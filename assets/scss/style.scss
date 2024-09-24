@@ -1,16 +1,72 @@
 // Import External Files
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
-@import "./partials/_global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "./partials/_variables.scss";
 @import "./partials/_mixins.scss";
+@import "./partials/_global.scss";
 
+// Header Section css here
+header {
+	.nav-link {
+		color: $primary-color !important;
+	}
+}
 
 // Hero Section css here
 .hero-container {
-    background-image: url('../images/banner-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+	background-image: url("../images/banner-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	padding-top: 150px;
+    margin-bottom: 100px;
+
+	.hero-content {
+		h1 {
+			line-height: 90px;
+			font-size: 72px;
+		}
+	}
+	.udemy-card {
+		height: fit-content;
+		top: 40%;
+		bottom: 50%;
+	}
+	.students-card {
+		height: fit-content;
+		text-align: center;
+        bottom: 5%;
+        padding: 20px 20px 30px 20px;
+		.stu {
+			letter-spacing: 10px;
+		}
+        .profile-icon{
+            background-color: #F2F2F2;
+            border-radius: 50%;
+            padding: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        .students{
+            img{
+                margin-left: -10px;
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+	}
+    .chat-card{
+        border-left: 6px solid #8A47CB;
+        bottom: 7%;
+        .chat-icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 10px;
+            background-image: linear-gradient(to right, #0063f4, #00f0aa);
+        }
+    }
 }

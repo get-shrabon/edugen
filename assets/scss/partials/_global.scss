@@ -15,15 +15,117 @@ h4,
 h5,
 h6 {
 	font-family: "Lexend", sans-serif;
+	margin-bottom: 0;
 }
 p {
 	font-family: "Kumbh Sans", sans-serif;
 }
 
 // Components
+
+.primary-color {
+	color: $primary-color !important;
+}
+.secodary-color {
+	color: $secondary-color !important;
+}
+.primary-bg {
+	background-color: $primary-color !important;
+}
+.secondary-bg {
+	background-color: $secondary-bg !important;
+}
+.lexend-font {
+	font-family: $primary-font !important;
+}
+.kumbh-font {
+	font-family: $secondary-font !important;
+}
+.dmsans-font {
+	font-family: $dmsans-font !important;
+}
+
+.fs-20 {
+	font-size: 20px;
+}
+.fs-24{
+	font-size: 24px;
+}
+.w-fit {
+	width: fit-content;
+}
 .primary-btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: $white;
-    background-color: $primary;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: $primary-color;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 10px 30px;
+	width: fit-content;
+	transition: all 0.2s ease-in-out;
+}
+.secondary-btn {
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: transparent;
+	color: $primary-color;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	width: fit-content;
+	border: 1px solid $primary-color;
+
+	img {
+		background-color: $primary-color;
+		padding: 20px;
+	}
+	span {
+		padding: 0 30px;
+	}
+}
+.play-btn {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	color: #8A47CB;
+	text-decoration: none;
+	font-size: 36px;
+	img{
+		position: relative;
+		right: -4px;
+	}
+}
+
+.text-gradient {
+	background: -webkit-linear-gradient(360deg, #0063f4 0%, #00f0aa 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.custom-underline {
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 20px;
+		background-image: url("../../../assets/images/underline-style.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
 }
