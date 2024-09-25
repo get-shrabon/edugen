@@ -26,24 +26,29 @@ header {
 		h1 {
 			line-height: 90px;
 			font-size: 72px;
+
 			.custom-underline {
 				padding-bottom: 0;
 			}
 		}
 	}
+
 	.udemy-card {
 		height: fit-content;
 		top: 40%;
 		bottom: 50%;
 	}
+
 	.students-card {
 		height: fit-content;
 		text-align: center;
 		bottom: 5%;
 		padding: 20px 20px 30px 20px;
+
 		.stu {
 			letter-spacing: 10px;
 		}
+
 		.profile-icon {
 			background-color: #f2f2f2;
 			border-radius: 50%;
@@ -51,18 +56,22 @@ header {
 			width: 60px;
 			height: 60px;
 		}
+
 		.students {
 			img {
 				margin-left: -10px;
+
 				&:first-child {
 					margin-left: 0;
 				}
 			}
 		}
 	}
+
 	.chat-card {
 		border-left: 6px solid #8a47cb;
 		bottom: 7%;
+
 		.chat-icon {
 			width: 60px;
 			height: 60px;
@@ -78,9 +87,11 @@ header {
 	.ctg-title {
 		line-height: 60px;
 	}
+
 	.category-card {
 		background-color: #ffebdf;
 		padding: 30px 0;
+
 		&:nth-child(even) {
 			background-color: #efffdf;
 		}
@@ -92,8 +103,10 @@ header {
 	background-color: #fff7fc;
 	padding-bottom: 270px;
 	z-index: -1;
+
 	.about-bg {
 		position: relative;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -108,22 +121,28 @@ header {
 			z-index: -1;
 		}
 	}
+
 	.exp-card {
 		background-image: linear-gradient(to right, #0063f4, #00f0aa);
 		padding: 20px 40px;
+
 		h2 {
 			font-size: 44px;
 		}
+
 		img {
 			transition: all 0.3s ease-in-out;
+
 			&:hover {
 				transform: scale(1.1);
 			}
 		}
 	}
+
 	.about-title {
 		line-height: 60px;
 	}
+
 	.about-mtitle {
 		color: #0a0624;
 	}
@@ -138,19 +157,24 @@ header {
 	padding: 30px 60px;
 	margin-top: -140px;
 	z-index: 999;
+
 	.video-title {
 		font-size: 70px;
 		color: black;
-		-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+		-webkit-text-fill-color: transparent;
+		/* Will override color (regardless of order) */
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+
 		span {
 			display: block;
+
 			&:last-child {
 				padding-left: 40%;
 			}
 		}
 	}
+
 	.play-btn {
 		width: 100px;
 		height: 100px;
@@ -160,11 +184,13 @@ header {
 		right: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
 		img {
 			width: 20px;
 			height: 20px;
 			right: -3px;
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -186,6 +212,7 @@ header {
 			max-width: 100%;
 			object-fit: cover;
 		}
+
 		.price-box {
 			position: absolute;
 			bottom: 0;
@@ -196,28 +223,35 @@ header {
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
+
 		.course-body {
 			box-shadow: 0px 10px 40px 0px #0000000d;
 			transition: all 0.3s ease-in-out;
+
 			&:hover {
 				box-shadow: 0px 35px 55px 0px #0000001a;
 			}
+
 			.course-btn {
 				padding: 10px 15px;
 				background-color: #f0f0f0;
 				border-radius: 4px;
 			}
+
 			.sad-color {
 				color: #878787;
 			}
+
 			.divider {
 				width: 100%;
 				height: 1px;
 				background-color: #f0f0f0;
 			}
+
 			.title {
 				transition: all 0.3s ease-in-out;
 				text-decoration: none;
+
 				&:hover {
 					color: $accent-color !important;
 				}
@@ -230,6 +264,7 @@ header {
 .why-choose-container {
 	background-color: #fff7fc;
 	position: relative;
+
 	.choose-icon {
 		position: absolute !important;
 		top: 85px;
@@ -261,6 +296,7 @@ header {
 			border-radius: 100px;
 		}
 	}
+
 	.choose-card {
 		.why-choose-img {
 			position: absolute;
@@ -281,7 +317,8 @@ header {
 .team-container {
 	.team-card {
 		position: relative;
-		&::after{
+
+		&::after {
 			content: "";
 			position: absolute;
 			top: 0;
@@ -294,29 +331,33 @@ header {
 			z-index: -1;
 			user-select: none;
 		}
-		&:nth-child(2)::after{
+
+		&:nth-child(2)::after {
 			background-image: url("../../assets/images/team-card-border1.svg") !important;
 		}
-		&:nth-child(3)::after{
+
+		&:nth-child(3)::after {
 			background-image: url("../../assets/images/team-card-border2.svg") !important;
 		}
-		&:nth-child(4)::after{
+
+		&:nth-child(4)::after {
 			background-image: url("../../assets/images/team-card-border3.svg") !important;
 		}
-		&:nth-child(3){
+
+		&:nth-child(3) {
 			.social-icons {
 				a {
-					background-image: linear-gradient(to right, #00f0aa, #0063f4) ;
+					background-image: linear-gradient(to right, #0063f4, #00f0aa);
 				}
 			}
 		}
-		
 
 		.social-icons {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 24px;
+
 			a {
 				width: 36px;
 				height: 36px;
@@ -327,6 +368,40 @@ header {
 				border-radius: 50%;
 			}
 		}
+	}
+}
+
+// Newsletter Section css here
+.newsletter-container {
+	padding: 80px 40px;
+	background-image: linear-gradient(to right, #0063f4, #00f0aa);
+
+	.form-box {
+		background-color: #fbfbfb;
+		border-radius: 4px;
+
+		input {
+			padding: 13px 30px;
+			outline: 0;
+
+			&::placeholder {
+				font-size: 16px;
+				font-family: $secondary-font;
+				color: $secondary-color;
+			}
+		}
+	}
+
+	.news-icon {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+
+	.news-icon2 {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
 	}
 }
 
