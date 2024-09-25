@@ -277,6 +277,59 @@ header {
 	}
 }
 
+// Team Member Section css here
+.team-container {
+	.team-card {
+		position: relative;
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100% 100%;
+			z-index: -1;
+			user-select: none;
+		}
+		&:nth-child(2)::after{
+			background-image: url("../../assets/images/team-card-border1.svg") !important;
+		}
+		&:nth-child(3)::after{
+			background-image: url("../../assets/images/team-card-border2.svg") !important;
+		}
+		&:nth-child(4)::after{
+			background-image: url("../../assets/images/team-card-border3.svg") !important;
+		}
+		&:nth-child(3){
+			.social-icons {
+				a {
+					background-image: linear-gradient(to right, #00f0aa, #0063f4) ;
+				}
+			}
+		}
+		
+
+		.social-icons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 24px;
+			a {
+				width: 36px;
+				height: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $accent-color;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
 // Animation Keyframes
 @keyframes circle {
 	0% {
