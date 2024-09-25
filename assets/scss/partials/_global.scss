@@ -20,6 +20,9 @@ h6 {
 p {
 	font-family: "Kumbh Sans", sans-serif;
 }
+button{
+	border: 0;
+}
 
 // Components
 
@@ -31,6 +34,9 @@ p {
 }
 .thrid-color {
 	color: $thrid-color !important;
+}
+.accent-color {
+	color: $accent-color !important;
 }
 .primary-bg {
 	background-color: $primary-color !important;
@@ -46,6 +52,9 @@ p {
 }
 .dmsans-font {
 	font-family: $dmsans-font !important;
+}
+.fs-16{
+	font-size: 16px;
 }
 .fs-18{
 	font-size: 18px;

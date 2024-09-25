@@ -91,6 +91,7 @@ header {
 .about-container {
 	background-color: #fff7fc;
 	padding-bottom: 270px;
+	z-index: -1;
 	.about-bg {
 		position: relative;
 		&::before {
@@ -135,7 +136,8 @@ header {
 	background-size: cover;
 	background-position: center;
 	padding: 30px 60px;
-   margin-top: -140px;
+	margin-top: -140px;
+	z-index: 999;
 	.video-title {
 		font-size: 70px;
 		color: black;
@@ -150,50 +152,85 @@ header {
 		}
 	}
 	.play-btn {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        bottom: 50%;
-        right: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		right: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		img {
 			width: 20px;
 			height: 20px;
 			right: -3px;
 		}
-        &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.2);
-            animation: circle 1.5s infinite;
-        }
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.2);
+			animation: circle 1.5s infinite;
+		}
 	}
 }
 
-
-
-
-
-
-
-
+// Courses Section css here
+.course-container {
+	.course-card {
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+		.price-box {
+			position: absolute;
+			bottom: 0;
+			left: 30px;
+			background-color: $accent-color;
+			color: white;
+			padding: 10px 20px;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+		.course-body {
+			box-shadow: 0px 10px 40px 0px #0000000d;
+			.course-btn {
+				padding: 10px 15px;
+				background-color: #f0f0f0;
+				border-radius: 4px;
+			}
+			.sad-color {
+				color: #878787;
+			}
+			.divider {
+				width: 100%;
+				height: 1px;
+				background-color: #f0f0f0;
+			}
+			.title {
+				transition: all 0.3s ease-in-out;
+				text-decoration: none;
+				&:hover {
+					color: $accent-color !important;
+				}
+			}
+		}
+	}
+}
 
 // Animation Keyframes
 @keyframes circle {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
 
-  100% {
-    transform: scale(1.8);
-    opacity: 0;
-  }
+	100% {
+		transform: scale(1.8);
+		opacity: 0;
+	}
 }
