@@ -198,6 +198,10 @@ header {
 		}
 		.course-body {
 			box-shadow: 0px 10px 40px 0px #0000000d;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				box-shadow: 0px 35px 55px 0px #0000001a;
+			}
 			.course-btn {
 				padding: 10px 15px;
 				background-color: #f0f0f0;
@@ -217,6 +221,57 @@ header {
 				&:hover {
 					color: $accent-color !important;
 				}
+			}
+		}
+	}
+}
+
+// Why Choose Us Section css here
+.why-choose-container {
+	background-color: #fff7fc;
+	position: relative;
+	.choose-icon {
+		position: absolute !important;
+		top: 85px;
+		left: 37px;
+	}
+
+	.custom-progress {
+		width: 100%;
+		height: 10px;
+		border-radius: 100px;
+		background-color: #d9d9d9;
+		position: relative;
+
+		.progress-tooltip {
+			position: absolute;
+			top: -20px;
+			width: 20px;
+			height: 20px;
+			margin-left: -10px;
+			background-image: linear-gradient(to right, #00f0aa, #0063f4);
+			clip-path: polygon(100% 0, 0 0, 50% 100%);
+			-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+			z-index: 999;
+		}
+
+		.prog {
+			height: 100%;
+			background-image: linear-gradient(to right, #0063f4, #00f0aa);
+			border-radius: 100px;
+		}
+	}
+	.choose-card {
+		.why-choose-img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			max-width: 100%;
+			transform: translate(20%, 0);
+
+			&:first-child {
+				transform: translate(17%, 0);
 			}
 		}
 	}
