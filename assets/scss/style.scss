@@ -475,6 +475,58 @@ header {
 	}
 }
 
+// Live class Section css here
+
+.live-class-container {
+	background-color: #FFF7FC;
+	.live-class-wrapper {
+		background-image: url("../../assets/images/class-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 600px;
+		margin-top: 56px;
+
+		.class-control {
+			button {
+				width: 60px;
+				height: 60px;
+				outline: 0;
+				background-color: transparent;
+
+				&:nth-child(1) {
+					background-color: white;
+				}
+				&:nth-child(2) {
+					background-color: #FF553e;
+				}
+				&:nth-child(3) {
+					background-color: #1CCA81;
+				}
+			}
+		}
+		.live-time{
+			align-self: flex-start;
+			background-color: $secondary-bg;
+			padding: 15px 30px;
+			.dot{
+				width: 8px;
+				height: 8px;
+				background-color: #FF553e;
+				border-radius: 50%;
+			}
+		}
+	}
+	.right-icon{
+		right: 66px;
+		bottom: 118px;
+	}
+	.left-icon{
+		left: 66px;
+		top: 118px;
+	}
+}
+
 
 // Animation Keyframes
 @keyframes circle {
