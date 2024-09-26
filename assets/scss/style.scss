@@ -12,6 +12,10 @@ header {
 		color: $primary-color !important;
 	}
 }
+.header-bg{
+	background-color: $secondary-bg !important	;
+			box-shadow: 0px 10px 40px 0px #0000000d;
+}
 
 // Hero Section css here
 .hero-container {
@@ -567,6 +571,99 @@ header {
 			margin-top: -33px;
 			padding: 20px 46px;
 			z-index: 999;
+		}
+	}
+}
+
+// Footer Section css here
+footer {
+	.footer-container {
+		background-color: #0C1327;
+
+		.row {
+			gap: 70px;
+		}
+
+		P,
+		a {
+			color: $secondary-bg;
+		}
+
+		.social-icons {
+			a {
+				width: 36px;
+				height: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				background-color: #555555;
+				color: white;
+				transition: all 0.3s;
+				text-decoration: none;
+
+				&:hover {
+					background-color: $accent-color;
+
+				}
+			}
+		}
+
+		.links {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding-left: 0;
+			margin-top: 40px;
+
+			li {
+				a {
+					color: #F0F0F0 !important;
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		background-color: $accent-color;
+		padding: 20px 0;
+					color: #F0F0F0;
+
+		button {
+			width: 60px;
+			height: 60px;
+			outline: 0;
+			background-color: $accent-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 5px solid #FBFBFB;
+			border-radius: 50%;
+			margin-top: -65px;
+		}
+		.bottom-navigation{
+			list-style: none;
+			li {
+				a{
+					color:#F0F0F0 ;
+					position: relative;
+					&::after{
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: -5px;
+						width: 0;
+						height: 2px;
+						background-color: #F0F0F0;
+						transition: all 0.3s;
+					}
+
+					&:hover::after{
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 }
