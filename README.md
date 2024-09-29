@@ -1,3 +1,3 @@
 # edugen
  
-## Live: [https://edugen.netlify.app/]
+## Live: https://edugen.netlify.app/
